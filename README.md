@@ -36,8 +36,8 @@ any other host.
 ## Getting started
 
 ```bash
-git clone https://github.com/harshil-at/open-sign-valid.git
-cd open-sign-valid
+git clone https://github.com/harshilsureja/open-sign-verify.git
+cd open-sign-verify
 npm install
 npm run dev        # http://localhost:3000
 npm test           # verification tests (generates signed PDFs on the fly)
@@ -72,7 +72,7 @@ TanStack Start (SPA mode) · React · shadcn/ui · Tailwind · pdf.js · PKI.js 
 ## Contributing
 
 Issues and pull requests are welcome at
-https://github.com/harshil-at/open-sign-valid.
+https://github.com/harshilsureja/open-sign-verify.
 
 ## License
 

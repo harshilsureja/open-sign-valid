@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.1
+
+- Fix GitHub links (header, footer, FAQ, README, package.json) to point to
+  https://github.com/harshilsureja/open-sign-verify
+
 ## v1.0.0 — first release
 
 Open Sign Valid checks the digital signature on an e-Aadhaar or any other
