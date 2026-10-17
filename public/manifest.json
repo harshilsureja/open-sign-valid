@@ -1,0 +1,11 @@
+{
+  "short_name": "Open Sign Valid",
+  "name": "Open Sign Valid — Verify Aadhaar & signed PDFs",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff"
+}
