@@ -1,5 +1,24 @@
 # Changelog
 
+## v1.1.0
+
+### Live on GitHub Pages
+- Hosted at https://harshilsureja.github.io/open-sign-valid/ — deployed
+  automatically on every push to `main` (GitHub Actions)
+- Repository renamed to https://github.com/harshilsureja/open-sign-valid
+
+### SEO and link previews
+- Landing page is prerendered to real HTML, so search engines can read it
+- Better title and description, canonical URL, keywords
+- Open Graph and Twitter cards with a 1200×630 preview image, so shared
+  links show a rich card on WhatsApp, X, LinkedIn, Slack and Telegram
+- Structured data (WebApplication and FAQ) for rich search results
+- `robots.txt`, `sitemap.xml`, app icons and web app manifest
+
+### UI
+- Shorter privacy badge on the landing page ("Free · Private · Secure")
+- GitHub icon hidden in the header on phones
+
 ## v1.0.1
 
 - Fix GitHub links (header, footer, FAQ, README, package.json) to point to

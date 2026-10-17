@@ -1,10 +1,14 @@
 {
   "short_name": "Open Sign Valid",
-  "name": "Open Sign Valid — Verify Aadhaar & signed PDFs",
+  "name": "Open Sign Valid — Verify e-Aadhaar & signed PDFs",
+  "description": "Check if your e-Aadhaar or any digitally signed PDF is genuine — privately, in your browser.",
   "icons": [
-    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ],
-  "start_url": ".",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "theme_color": "#2563eb",
   "background_color": "#ffffff"

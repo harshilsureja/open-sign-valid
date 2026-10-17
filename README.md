@@ -36,14 +36,31 @@ any other host.
 ## Getting started
 
 ```bash
-git clone https://github.com/harshilsureja/open-sign-verify.git
-cd open-sign-verify
+git clone https://github.com/harshilsureja/open-sign-valid.git
+cd open-sign-valid
 npm install
 npm run dev        # http://localhost:3000
 npm test           # verification tests (generates signed PDFs on the fly)
 npm run samples    # writes sample PDFs to samples/ for manual testing
 npm run build      # static site in dist/client — host anywhere
 ```
+
+## Deploy (GitHub Pages)
+
+Live site: https://harshilsureja.github.io/open-sign-valid/
+
+Every push to `main` builds and deploys automatically via
+[.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+- `BASE_PATH` (set by the workflow to `/<repo>/`) makes assets work under the
+  project-page subpath; leave it unset locally or on a custom domain.
+- `VITE_SITE_URL` sets the absolute URL used for the canonical link, Open Graph /
+  Twitter preview image, `robots.txt` and `sitemap.xml`.
+- The landing page is prerendered to static HTML (title, description, FAQ and
+  structured data are visible to search engines and link previews).
+- `npm run images` regenerates `public/og-image.png` (1200×630 social preview)
+  and the app icons from [scripts/make-images.mjs](scripts/make-images.mjs).
 
 ## Trusted roots (important for e-Aadhaar)
 
@@ -72,7 +89,7 @@ TanStack Start (SPA mode) · React · shadcn/ui · Tailwind · pdf.js · PKI.js 
 ## Contributing
 
 Issues and pull requests are welcome at
-https://github.com/harshilsureja/open-sign-verify.
+https://github.com/harshilsureja/open-sign-valid.
 
 ## License
 

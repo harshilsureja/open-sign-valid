@@ -4,6 +4,8 @@ import { routeTree } from "./routeTree.gen"
 export function getRouter() {
   const router = createTanStackRouter({
     routeTree,
+    // Matches Vite's `base` (e.g. /open-sign-valid/ on GitHub Pages).
+    basepath: import.meta.env.BASE_URL,
 
     scrollRestoration: true,
     defaultPreload: "intent",

@@ -119,9 +119,11 @@ export function StandardsSection() {
   )
 }
 
-const FAQS: Array<{ q: string; a: React.ReactNode }> = [
+/** `text` is the plain version used for search-engine structured data. */
+export const FAQS: Array<{ q: string; a: React.ReactNode; text: string }> = [
   {
     q: "Is my e‑Aadhaar uploaded anywhere?",
+    text: "No. The file is read and checked entirely inside your browser on your own device. Nothing is sent to any server — the site even works offline once it has loaded.",
     a: (
       <>
         No. The file is read and checked entirely inside your browser on your own device. Nothing
@@ -132,6 +134,7 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
   },
   {
     q: "What is the password of my e‑Aadhaar PDF?",
+    text: "The first 4 letters of your name (as printed on the Aadhaar) in CAPITAL letters, followed by your year of birth — for example SURE1990. The password is only needed to view the pages; the signature is checked without it.",
     a: (
       <>
         The first 4 letters of your name (as printed on the Aadhaar) in CAPITAL letters, followed
@@ -143,6 +146,7 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
   },
   {
     q: "What do the green, yellow and red results mean?",
+    text: "Green tick: genuine — signed by a trusted authority like UIDAI and not changed since. Yellow: the file is unchanged but the signer could not be confirmed, or something was added after signing. Red cross: not genuine — the file was edited after it was signed.",
     a: (
       <>
         <strong>Green tick</strong>: genuine — signed by a trusted authority (like UIDAI) and not
@@ -154,6 +158,7 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
   },
   {
     q: "Why does my e‑Aadhaar say “Signature Not Verified” in other apps?",
+    text: "That text and question mark are a picture stored inside the PDF. Most phone and browser PDF viewers cannot check signatures, so they show that picture. Open Sign Valid checks the signature and shows the real result, like Adobe Reader.",
     a: (
       <>
         That text and question mark are a picture stored inside the PDF. Most phone and browser
@@ -164,6 +169,7 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
   },
   {
     q: "Is a verified e‑Aadhaar valid like the original?",
+    text: "UIDAI states that an e-Aadhaar downloaded from its website is as valid as the physical Aadhaar letter. A green tick confirms the file is the one UIDAI signed and has not been edited.",
     a: (
       <>
         UIDAI states that an e-Aadhaar downloaded from its website is as valid as the physical
@@ -174,6 +180,7 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
   },
   {
     q: "Which other documents can I check?",
+    text: "Any PDF with a standard digital signature: DigiLocker documents, eSign agreements, GST and income-tax certificates, invoices and contracts. A scanned signature image is not a digital signature and cannot be verified.",
     a: (
       <>
         Any PDF with a standard digital signature: DigiLocker documents, eSign agreements, GST
@@ -184,6 +191,7 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
   },
   {
     q: "Does it work on mobile?",
+    text: "Yes. Open the site on your phone, tap Choose PDF and pick your e-Aadhaar from Downloads or Files. You can also print from your phone.",
     a: (
       <>
         Yes. Open this site on your phone, tap <strong>Choose PDF</strong> and pick your
@@ -193,6 +201,7 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
   },
   {
     q: "Is this an official UIDAI or government website?",
+    text: "No. Open Sign Valid is an independent, free, open-source project. It uses the official CCA India root certificates published at cca.gov.in to confirm signers.",
     a: (
       <>
         No. {APP_NAME} is an independent, free, open-source project. It uses the official
@@ -202,6 +211,7 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
   },
   {
     q: "Does it check if a certificate was revoked?",
+    text: "Not yet. Revocation lists (OCSP/CRL) need a request to the issuing authority, which browsers usually block. This is planned as an optional feature.",
     a: (
       <>
         Not yet. Revocation lists (OCSP/CRL) need an internet request to the issuing authority,
@@ -211,6 +221,7 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
   },
   {
     q: "Is it free? Can I see the code?",
+    text: "Yes, it is completely free and open source under the Apache-2.0 licence, and the code is on GitHub.",
     a: (
       <>
         Yes, it's completely free and open source under the Apache-2.0 licence. The code is on{" "}

@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils"
 
 export const APP_NAME = "Open Sign Valid"
 export const APP_TAGLINE = "Verify Aadhaar & signed PDFs — privately"
-export const REPO_URL = "https://github.com/harshilsureja/open-sign-verify"
+export const REPO_URL = "https://github.com/harshilsureja/open-sign-valid"
 
 /** GitHub mark (lucide no longer ships brand icons). */
 export function GitHubIcon({ className }: { className?: string }) {
