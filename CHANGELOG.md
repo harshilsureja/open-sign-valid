@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.1.1
+
+- Fix printing on phones: a one-page PDF no longer spills onto a second
+  sheet when the browser keeps printer margins. Each page now fits the
+  printable area (true size when possible, scaled down with the same
+  proportions otherwise).
+
 ## v1.1.0
 
 ### Live on GitHub Pages

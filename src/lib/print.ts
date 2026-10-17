@@ -47,7 +47,8 @@ export async function printDocument(
       const img = document.createElement("img")
       img.src = url
       img.alt = `Page ${i}`
-      // Physical size in inches keeps the original page scale (100%).
+      // Physical size in inches keeps the original page scale (100%); the
+      // print CSS shrinks it (aspect kept) only if the printer adds margins.
       img.style.width = `${base.width / 72}in`
       img.style.height = `${base.height / 72}in`
       sheet.append(img)
